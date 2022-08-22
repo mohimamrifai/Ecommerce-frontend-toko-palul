@@ -7,7 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './common/Header/Header';
-import Pages from './common/pages/Pages';
+import Pages from './pages/Pages';
 
 function App() {
   return (

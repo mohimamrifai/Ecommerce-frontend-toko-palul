@@ -1,0 +1,105 @@
+.FlashDeals {
+    padding: 50px 0;
+}
+
+.flash {
+    background-color: #f6f9fc;
+    width: 100%;
+}
+
+
+/* .card {
+    background-color: #fff;
+    width: 25%;
+    padding: 0 20px;
+    margin: 0 10px;
+} */
+
+/* .row-dua {
+    display: flex;
+    gap: 24px;
+} */
+
+.boxcard {
+    background-color: #fff;
+    margin: 0 5px;
+    padding: 15px;
+}
+.boxcard .diskonCard {
+    background-color: #e94560;
+    font-size: 14px;
+    padding: 3px 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.btn-plus-card {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #e94560;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.ratingCard > * {
+    margin: 0;
+    font-size: 18px;
+    color: #ffcd4e;
+}
+
+.titleCard {
+    letter-spacing: 1px;
+}
+
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.footerCard h3 {
+    margin: 0;
+}
+
+.navCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.control-btn .next,
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  background: #0f3460;
+  border-radius: 50%;
+  transform: 0.5s;
+  transition: .5s;
+  z-index: 5;
+}
+.control-btn .prev {
+  left: -20px;
+}
+.control-btn .next {
+  right: -20px;
+}
+.control-btn .prev > *,
+.control-btn .next > * {
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
+}
+.control-btn .prev:hover,
+.control-btn .next:hover {
+  background: #e94560;
+  color: white;
+  cursor: pointer;
+}

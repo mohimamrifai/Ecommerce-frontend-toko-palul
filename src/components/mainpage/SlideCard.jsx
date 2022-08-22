@@ -17,8 +17,8 @@ const SlideCard = () => {
         <Slider {...settings}>
             {Sdata.map((value, index) => {
                 return (
-                    <>
-                    <div className="box-slider" key={index}>
+                    <div key={index}>
+                    <div className="box-slider" >
                     <div className="left">
                         <h1 className='title-slider'>{value.title}</h1>
                         <p>{value.desc}</p>
@@ -28,7 +28,7 @@ const SlideCard = () => {
                         <img src={value.cover} alt='' />
                     </div>
                 </div>
-                </>
+                    </div>
                 )
                 
             })}
