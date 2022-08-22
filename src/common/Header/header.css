@@ -53,7 +53,7 @@
 
 .search .logo-UC {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 24px;
 }
 
@@ -72,4 +72,56 @@
 .logo-user > *,  .logo-cart > * {
     width: 20px;
     height: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 15px 17px -8px rgb(0 0 0 / 10%);
+}
+
+.categoris {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    gap: 24px;
+}
+
+.navlink {
+    display: flex;
+    gap: 24px;  
+}
+
+.categoris h4 {
+    font-size: 18px;
+}
+
+.categoris .CM {
+    width: 20px;
+    height: 20px;
+}
+
+.navlink a {
+    color: slateblue;
+    transition: .5s;
+}
+.navlink a:hover {
+    color: pink;
+}
+
+.btn-menu {
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background: transparent;
+    display: none;
 }
