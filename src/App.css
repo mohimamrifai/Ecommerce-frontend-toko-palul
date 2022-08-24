@@ -43,3 +43,32 @@ a {
 .contentWidth {
   width: 77%;
 }
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.background {
+  background-color: #f6f9fc;
+  padding-bottom: 50px;
+}
+
+.shadow {
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+}
+
+.btn-more {
+  border: none;
+  outline: none;
+  color: #e94560;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: .8;
+}

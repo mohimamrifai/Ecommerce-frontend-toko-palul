@@ -1,0 +1,44 @@
+
+.box-top {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 3px;
+    position: relative;
+}
+
+
+
+.category {
+    background-color:#f6f9fc;
+    padding: 50px 0;
+}
+
+.box-top-navbar {
+    position: absolute;
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+.tright {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: aliceblue;
+}
+
+.tleft {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+    background-color: #0f3460;
+}
+

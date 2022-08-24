@@ -38,11 +38,23 @@
     height: 30px;
     border: none;
     outline: none;
-    background-color: #e94560;
-    color: white;
+    color: #e94560;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
     cursor: pointer;
+    background-color: transparent;
     border-radius: 3px;
     font-weight: bold;
+    transition: .5s;
+}
+
+.btn-plus-card:hover {
+    background-color: #e94560;
+    color: white;
 }
 
 .ratingCard > * {

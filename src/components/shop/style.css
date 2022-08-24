@@ -1,0 +1,62 @@
+.shop-main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 20px;
+}
+
+.containter-Brands {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    height: 80vh;
+}
+
+.brans {
+    background-color:#f6f9fc; ;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.brans:hover, .btn-view:hover {
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+
+.brans img {
+    width: auto;
+    height: auto;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.btn-view {
+    background-color: #f6f9fc ;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.nav-shop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}

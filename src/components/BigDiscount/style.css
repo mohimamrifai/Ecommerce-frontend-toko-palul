@@ -1,0 +1,12 @@
+.box-bd {
+    background-color: white;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.box-bd h4 {
+    font-weight: 400;
+}
+.box-bd span {
+    color: #e94560;
+}
