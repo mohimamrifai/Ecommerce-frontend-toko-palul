@@ -42,3 +42,23 @@ img {
     background-color: #0f3460;
 }
 
+@media screen and (max-width: 768px){
+    .category {
+        padding: 20px 0;
+    }
+
+    .tright {
+        padding: 3px 5px;
+        top: 5px;
+        right: 40px;
+        font-size: 10px;
+    }
+
+    .tleft {
+        padding: 3px 5px;
+        font-size: 10px;
+        top: 5px;
+        left: 5px;
+    }
+
+}

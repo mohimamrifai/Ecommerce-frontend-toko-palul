@@ -22,6 +22,9 @@ const Head = () => {
             <label>USD</label>
           </div>
         </div>
+        <button className='btn-head-close' onClick={() => {
+          document.querySelector('.head').classList.add('none')
+        }}>X</button>
       </section>
     </>
   )

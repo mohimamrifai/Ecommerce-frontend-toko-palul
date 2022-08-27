@@ -47,3 +47,39 @@
 .appstore, .playstore {
     margin-right: 10px;
 }
+
+
+@media screen and (max-width: 768px){
+    .bf_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 428px){
+
+    .bf_section {
+        gap: 5px;
+    }
+    .bf h1 {
+        font-size: 24px;
+    }
+
+    .bf h2 {
+        font-size: 16px;
+    }
+
+    .footer .bf_section .bf ul li {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .bf p{
+        font-size: 12px;
+    }
+
+    .bf_icon {
+        padding: 5px 10px;
+    }
+    .bf_icon span {
+    font-size: 12px;
+    }
+}

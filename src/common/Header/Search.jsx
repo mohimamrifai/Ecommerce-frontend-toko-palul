@@ -6,9 +6,11 @@ const Search = ({cartItem}) => {
 
 
     window.addEventListener("scroll", () => {
+
         const Search = document.querySelector(".search")
 
         Search.classList.toggle("active", window.scrollY > 100)
+
     })
 
 

@@ -12,6 +12,11 @@
     margin-right: 30px;
     font-size: 13px;
 }
+
+
+
+
+
 .search {
     padding: 20px 0;
 }
@@ -124,8 +129,24 @@
 .btn-menu {
     outline: none;
     border: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.btn-close-nav {
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.btn-close-nav > * {
+    outline: none;
+    border: none;
+    width: 30px;
+    height: 30px;
 }
 
 .btn {
@@ -159,3 +180,140 @@
     right: 0;
     border-radius: 50%;
 }
+
+.btn-head-close {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .head i {
+        margin-right: 5px;
+    }
+    
+    .head label {
+        font-size: 9px;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .search-box span {
+        display: none;
+    }
+
+    .logo-user, .logo-cart {
+        width: 40px;
+        height: 40px;
+    }
+
+    .categoris {
+        display: none;
+    }
+
+    .home-main {
+        flex-direction: column-reverse;
+    }
+
+
+    .search.active {
+        height: 12vh;
+    }
+
+    .btn-head-close {
+        display: none;
+    }
+ }
+
+
+
+@media screen and (max-width: 428px){
+    .head {
+        padding: 5px 0;
+    }
+    
+    .head i {
+        margin-right: 5px;
+    }
+    
+    .head label {
+        margin-right: 20px;
+        font-size: 9px;
+    }
+
+    .head.none {
+        display: none;
+    }
+
+    .btn-head-close {
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: #ddd;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+    .search .wrapper .logo {
+        grid-area: logo;
+        margin-bottom: 15px;
+    }
+
+    .search .wrapper .search-box {
+        grid-area: cari;
+    }
+    .search .wrapper .logo-UC {
+        grid-area: icon;
+        gap: 5px;
+    }
+
+    .search .wrapper {
+        grid-template-areas: 
+            "logo logo"
+            "cari icon"
+        ;
+
+        grid-template-columns: none;
+    }
+
+    .navlink {
+        flex-direction: column;
+        gap: 12px;
+        display: none;
+        transition: .5s;
+        width: 100%;
+    }
+
+    .navlink li:first-child {
+        margin-top: 7px;
+    }
+
+    .navlink.active {
+        display: inherit;
+        transition: .5s;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+
+    .btn {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+    }
+
+    .search.active {
+        min-height: 115px;
+    }
+}
+
+

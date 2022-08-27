@@ -31,9 +31,13 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <button className='btn'>
+            <button className='btn' onClick={() => {
+                document.querySelector('.navlink').classList.toggle('active')
+            }}>
                 <FiAlignJustify className="btn-menu"/>
             </button>
+
+
     </section>
   )
 }

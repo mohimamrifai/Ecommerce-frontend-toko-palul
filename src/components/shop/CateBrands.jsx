@@ -6,11 +6,10 @@ const cateBrands = ({data}) => {
         <h2>Brands</h2>
         {data.map((value, index) => {
             return (
-                <div key={index}>
-                <div className="brans" >
+
+                <div className="brans" key={index}>
                 <img src={value.cateImg} alt="" />
                     <h4 className="brand" >{value.cateName}</h4>
-                </div>
                 </div>
             )
         })}

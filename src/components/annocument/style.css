@@ -1,0 +1,33 @@
+.img-satu {
+    width: 30%;
+    height: 340px;
+}
+
+.img-dua {
+    width: 68%;
+    height: 340px;
+}
+
+
+@media screen and (max-width: 768px){
+    .img-satu {
+        width: 40%;
+        height: 300px;
+    }
+
+    .img-dua {
+        width: 58%;
+        height: 300px;
+    }
+}
+@media screen and (max-width:428px){
+    .img-satu {
+        width: 40%;
+        height: 150px;
+    }
+
+    .img-dua {
+        width: 58%;
+        height: 150px;
+    }
+}

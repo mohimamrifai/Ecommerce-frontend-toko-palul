@@ -115,3 +115,34 @@
   color: white;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px){
+    .row-satu {
+        margin-bottom: 20px;
+    }
+
+    .boxcard {
+        padding: 10px;
+    }
+
+    .boxcard .diskonCard {
+        padding: 2px 7px ;
+        font-size: 12px;
+    }
+
+    .FlashDeals {
+        padding: 20px 0;
+    }
+
+    .titleCard {
+        font-size: 14px;
+    }
+
+    .ratingCard > * {
+        margin: 0;
+        font-size: 14px;
+        color: #ffcd4e;
+    }
+}
+

@@ -1,7 +1,7 @@
 .list-categoris {
     box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
   background-color: #fff;
-  width: 23%;
+  /* width: 23%; */
   padding: 15px 0;
   border-radius: 5px;
   margin-top: 5px;
@@ -68,4 +68,66 @@ font-size: 18px;
 .home {
     box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
     padding:50px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .list-categoris {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .list-categoris span {
+    font-size: 12px;
+    margin: 5px 10px ;
+  }
+
+  .list-categoris .box {
+    padding: 0;
+  }
+
+  .list-categoris img {
+    display: none;
+  }
+
+  .box-slider {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contentWidth {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 428px){
+    .title-slider {
+      font-size: 20px;
+    }
+
+    .box-slider .left p {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .box-slider .right img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    .btn-primary {
+      background: #e94560;
+      padding: 10px 15px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .5s;
+    }
 }

@@ -11,9 +11,26 @@ const BdCart = ({datas}) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 2
+            }
+          }
+          ],
       }
   return (
     <>
@@ -26,7 +43,7 @@ const BdCart = ({datas}) => {
                             <img src={data.cover} alt=""/>
                             </div>
                             <h4>{data.name}</h4>
-                            <span>$ {data.price}</span>
+                            <span>{data.price}</span>
                         </div>
                     </div>
                 )
