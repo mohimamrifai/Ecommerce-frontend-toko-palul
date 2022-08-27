@@ -3,9 +3,8 @@ import {AiFillStar, AiOutlinePlus} from "react-icons/ai"
 import {FiHeart} from "react-icons/fi"
 
 
-const ShopCard = ({datas}) => {
+const ShopCard = ({shopItems, addToCart}) => {
 
-    const products = datas.shopItems;
   return (
     <div className="container-content-shop">
         <div className="nav-shop">
@@ -13,7 +12,7 @@ const ShopCard = ({datas}) => {
             <button className='btn-more'>More</button>
         </div>
         <div className="cards">
-            {products.map((data, i) => {
+            {shopItems.map((data, i) => {
                 return (
                     <div className='card' key={i}>
                 <div className="boxcard">
@@ -34,7 +33,7 @@ const ShopCard = ({datas}) => {
                     </div>
                     <div className="footerCard">
                         <h3 className="price">$ {data.price}</h3>
-                        <button className='btn-plus-card'>
+                        <button className='btn-plus-card' onClick={() => addToCart(data)}>
                             <AiOutlinePlus />
                         </button>
                     </div>

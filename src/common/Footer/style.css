@@ -1,0 +1,49 @@
+.footer {
+    background-color: #0f3460;
+}
+
+
+.bf_section {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.bf {
+    padding: 10px;
+    color: white;
+}
+
+.footer .bf_section .bf > p  {
+    color: #ddd;
+}
+
+.footer .bf_section .bf ul li {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.bf ul {
+    padding: 0;
+    list-style: none;
+}
+
+.bf h1 {
+    color: #e94560;
+}
+
+
+.bf_icon {
+    padding: 10px 30px ;
+    margin-top: 10px;
+    background-color: #143053;
+    opacity: .8;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.appstore, .playstore {
+    margin-right: 10px;
+}

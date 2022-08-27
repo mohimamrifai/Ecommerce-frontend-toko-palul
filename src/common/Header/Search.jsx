@@ -1,7 +1,18 @@
 import React from 'react'
 import {BiSearchAlt, BiUser, BiCart} from "react-icons/bi"
+import { Link } from 'react-router-dom'
 
-const Search = () => {
+const Search = ({cartItem}) => {
+
+
+    window.addEventListener("scroll", () => {
+        const Search = document.querySelector(".search")
+
+        Search.classList.toggle("active", window.scrollY > 100)
+    })
+
+
+
   return (
     <section className='search'>
         <div className="container wrapper">
@@ -17,9 +28,9 @@ const Search = () => {
                 <div className='logo-user'>
                 <BiUser/>
                 </div>
-                <div className='logo-cart'>
-                <BiCart />
-                </div>
+                <Link className='logo-cart' to='/cart' data-qty={cartItem.length}>
+                    <BiCart />
+                </Link>
             </div>
         </div>
     </section>

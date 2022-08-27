@@ -6,7 +6,8 @@ import "./flashcard.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-const FlashCard = ({Datas}) => {
+const FlashCard = ({productItems, addToCart}) => {
+
 
 
     const SampleNextArrow = (props) => {
@@ -44,7 +45,7 @@ const SamplePrevArrow = (props) => {
   return (
     <>
       <Slider {...settings}>
-        {Datas.map((data, index) => {
+        {productItems.map((data, index) => {
           return (
             <div className='card' key={index}>
                 <div className="boxcard">
@@ -65,7 +66,7 @@ const SamplePrevArrow = (props) => {
                     </div>
                     <div className="footerCard">
                         <h3 className="price">${data.price}</h3>
-                        <button className='btn-plus-card'>
+                        <button className='btn-plus-card' onClick={() => addToCart(data)}>
                             <AiOutlinePlus />
                         </button>
                     </div>

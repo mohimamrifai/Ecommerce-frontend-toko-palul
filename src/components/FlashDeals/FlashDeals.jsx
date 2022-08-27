@@ -1,10 +1,10 @@
 import React from 'react'
 import FlashCard from "./FlashCard"
 import "./flashcard.css"
-import Datas from './flashData'
 
 
-const FlashDeals = () => {
+const FlashDeals = ({productItems, addToCart}) => {
+
 
   return (
     <div className="flash">
@@ -12,7 +12,7 @@ const FlashDeals = () => {
         <div className="row-satu">
             <h1>Flash Deals</h1>
         </div>
-            <FlashCard Datas={Datas}/>
+            <FlashCard productItems={productItems} addToCart={addToCart}/>
     </section>
     </div>
   )

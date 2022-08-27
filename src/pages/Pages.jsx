@@ -8,15 +8,16 @@ import Shop from '../components/shop/Shop'
 import Topcategory from '../components/top/Topcategory'
 import Wrapper from '../components/wrapper/Wrapper'
 
-const Pages = () => {
+const Pages = ({productItems, shopItems, addToCart}) => {
+
   return (
     <>
       <Home />
-      <FlashDeals />
+      <FlashDeals productItems={productItems} addToCart={addToCart}/>
       <Topcategory />
       <NewArrival />
       <BigDiscount />
-      <Shop />
+      <Shop shopItems={shopItems} addToCart={addToCart}/>
       <Annocument />
       <Wrapper />
     </>
